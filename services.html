@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>COMP1021 Coursework 2</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="./prints.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/services.js"></script>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <style>
+            header, section, footer, aside, nav, main, article, figure {
+                display: block; 
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="privacy-notice-pop-up-overlay" ></div>
+        <!--Header of the website-->
+        <header class="header">
+            <div class="header-column header-column-1">
+                <!--Logo-->
+                <a href="index.html">
+                <img class="header-item" id="site-logo" src="images/site-logo.png" alt="Website Logo"/>
+                </a>
+            </div>
+
+            <div class="header-column header-column-2">
+                <div class="social-icons-container">
+                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Facebook Logo" />
+                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Twitter Logo" />
+                </div>
+                <!--Social Media Icons-->
+                
+                <!--Navigation bar-->
+                <nav class="header-item" id ="nav-bar">
+                    <a href= "index.html" class="nav-item">Home</a> 
+                    <a href= "about.html" class="nav-item">About</a>
+                    <a href= "portfolio.html" class="nav-item">Portfolio</a> 
+                    <a href= "services.html" class="nav-item active">Services</a> 
+                    <a href= "contact.html" class="nav-item">Contact</a> 
+                </nav>
+
+
+            </div>
+
+        </header>
+
+        <section class="page-title">
+            <h3>Services</h3>
+        </section>
+
+        <!-- First Row of Services-->
+        <section class="services-section-1" id="section-1">
+            <div id="pop-out-overlay">
+            </div>
+
+            <div class="service services-section-1-column" id="1">
+                <div class="services-section-1-column-row">
+                    <h4 class="services-header" id="service-header-1">Logo Design</h4>
+                </div>
+                <p class="services-section-2-column-row click-to-view-more">(Click to view more)</p>
+                <div class="services-section-1-column-row">
+                    <img class="services-icon" src="images/logo-design.svg" alt="Icon for logo design"/>
+                    <p id="service-description-1"> 
+                        You are at the perfect place for all types logos. I Understand the value a logo brings and I will surely create a unique logo from your requirements
+                    </p>
+                </div>
+            </div>
+
+            <div class="service services-section-1-column" id="2">
+                <div class="services-section-1-column-row">
+                    <h4 class="services-header" id="service-header-2">Business Cards</h4>
+                </div>
+                <p class="services-section-2-column-row click-to-view-more">(Click to view more)</p>
+                <div class="services-section-1-column-row">
+                    <img class="services-icon" src="images/business-card.svg" alt="Icon for business-card"/>
+                    <p id="service-description-2"> 
+                        I will design a premium and luxury business card that communicates your business messsage.
+                         And of course your card will be yours to use or what ever purpose you want.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second row of services-->
+        <section class="services-section-2" >
+            <div class="service services-section-2-column" id="3">
+                <div class="services-section-2-column-row">
+                    <h4 class="services-header" id="service-header-3">Business Support</h4>
+                </div>
+                <p class="services-section-2-column-row click-to-view-more">(Click to view more)</p>
+                <div class="services-section-2-column-row">
+                    <img class="services-icon" src="images/business-support.svg" alt="Icon for business support" />
+                    <p id="service-description-3"> 
+                        I offer 24/7 round the clock business support. This means what ever you business may be facing. 
+                        You are only one call away from finding the solution.
+    
+                    </p>
+                </div>
+            </div>
+
+            <div class="service services-section-2-column" id="4">
+                <div class="services-section-2-column-row" >
+                    <h4 class="services-header" id="service-header-4">Website Design</h4>
+                </div>
+                <p class="services-section-2-column-row click-to-view-more">(Click to view more)</p>
+                <div class="services-section-2-column-row">
+                    <img class="services-icon" src="images/website-design.svg" alt="Icon for website design"/>
+                    <p id="service-description-4"> 
+                        Are you looking for a professional website designer? Look no further.
+                        I will create a unique and highly personalised business website that communicates your business needs
+                        Ecommerce and custom options available.
+
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!-- SERVICES POP OUT CONTAINER-->
+        <aside class="pop-out-container">
+            <div class="services-pop-out pop-up" id="pop-out">
+                <a href="#"><img id="pop-out-close-button" src="images/close_black.svg" alt="Close Button"/></a>
+                <div class="pop-out-column-row" >
+                    <h4 class="services-header" id="pop-out-header" >Website Design</h4>
+                </div>
+
+                <img class="services-icon" id="pop-out-image-1" src="images/logo-design.svg" alt="Icon for logo design"/>
+                <img class="services-icon" id="pop-out-image-2"  src="images/business-card.svg" alt="Icon for business-card"/>
+                <img class="services-icon" id="pop-out-image-3" src="images/business-support.svg" alt="Icon for business support"/>
+                <img class="services-icon" id="pop-out-image-4" src="images/website-design.svg" alt="Icon for website design"/>
+                <p id="pop-out-description"> 
+                    Are you looking for a professional website designer? Look no further.
+                    I will create a unique and highly personalised business website that communicates your business needs
+                    Ecommerce and custom options available.
+                </p>
+
+                <!-- <a id="pop-out-button-container" href="contact.html">
+                    <button id="pop-out-button" class="button"> Get in touch now</button>
+                </a>  -->
+
+                <a class="button" id="pop-out-button" href="contact.html">
+                    Get in touch now
+                </a> 
+            </div>
+        </aside>
+
+        <!-- PRIVACY POP-UP-->
+        <div class="privacy-notice-pop-up pop-up">
+            <div class="privacy-close-button-container">
+                <a href="#"><img id="privacy-close-button" src="images/close_black.svg" alt="Close Button"/></a>
+            </div>
+
+            <div class="privacy-notice-pop-up-header-container">
+                <h4 class="privacy-notice-pop-up-header" >Advanced Cookie Settings</h4>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Essential cookies</h4>
+                    <p class="cookie-description">These cookies enable core functionality such as security, 
+                        verification of identity and network management. These cookies can’t be disabled.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Marketing Cookies</h4>
+                    <p class="cookie-description">These cookies are used to track advertising effectiveness to provide a 
+                        more relevant service and deliver better ads to suit your interests.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="save-button-container">
+                <button class="save-button button" >Save</button>
+            </div>
+        </div>
+
+        <!--Privacy Notice - COOKIE BANNER-->
+        <section class="privacy-notice">
+            <div class="privacy-notice-container"> 
+                <p>We use cookies on our website to see how you interact with it. By accepting, you agree to our use of such cookies.</p>
+                <div>
+                    <button class="privacy-notice-button advanced-button"> Advanced</button>
+                    <button class="privacy-notice-button accept-button"> Accept</button>
+                    <a href="#"><img id="close-button" src="images/close.svg" alt="Close Button"/></a>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!--Footer of the website-->
+        <footer class="footer">
+            <div class="footer-row">
+                <img class="social-icons footer-facebook-icon" src ="images/facebook.svg" alt="Image of Facebook Logo"/>
+                <img class="social-icons footer-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo"/>
+            </div>
+            <div class="footer-row">
+                <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
+            </div>
+            
+        </footer>
+    </body>
+</html>
