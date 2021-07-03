@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>COMP1021 Coursework 2</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="./prints.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <style>
+            header, section, footer, aside, nav, main, article, figure {
+                display: block; 
+        }
+        </style>
+
+    </head>
+
+    <body >
+        <div class="privacy-notice-pop-up-overlay" ></div>
+        <!--Header of the website-->
+        <header class="header">
+            <div class="header-column header-column-1">
+                <!--Logo-->
+                <a href="index.html">
+                <img class="header-item" id="site-logo" src="images/site-logo.png" alt="Website Logo"/>
+                </a>
+            </div>
+
+            <div class="header-column header-column-2">
+                <div class="social-icons-container">
+                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Image of Facebook Logo" />
+                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo" />
+                </div>
+                <!--Social Media Icons-->
+                
+                <!--Navigation bar-->
+                <nav class="header-item" id ="nav-bar">
+                    <a href= "index.html" class="nav-item">Home</a> 
+                    <a href= "about.html" class="nav-item">About</a>
+                    <a href= "portfolio.html" class="nav-item">Portfolio</a> 
+                    <a href= "services.html" class="nav-item">Services</a> 
+                    <a href= "contact.html" class="nav-item active">Contact</a> 
+                </nav>
+            </div>
+        </header>
+
+        <!--Webpage content-->
+        <section class="page-title">
+            <h3>Contact</h3>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-section-container">
+                <div class="contact-section-1-column enquiries">
+                    <h4>Enquiries</h4>
+                    <p>Use the contact form to get in touch with me</p>
+                    <form>
+                        <label>Full Name
+                            <input class="input" placeholder="Please enter your full name.." type="text"/>
+                        </label>
+                        <label>Email Address*
+                            <input placeholder="Enter your email address..." type= "email" required/>
+                        </label>
+                        <label> What services are you enquiring about?*
+                        <select required>
+
+                            <option value="" disabled>Please pick an option...</option>
+                            <option>Logo Design</option>
+                            <option>Business Card</option>
+                            <option>Website Design</option>
+                            <option>Flyer Design</option>
+                            <option>Banner Design</option>
+                        </select>
+                        </label>
+                        <label> Message*
+                            <textarea placeholder="Write your message here..." required></textarea>
+                        </label>
+                        <label>
+                            <input class="button contact-submit-button" type="submit"/>
+                        </label>
+                    </form>
+                </div>
+                <div class="contact-section-1-column">
+                    <div class="contact-details-container">
+                        <h4>Contact Details</h4>
+                        <p> Please get in touch with me using using the contact form to the left. <br> 
+                            Alternatively you can use the social media links below</p>
+                    </div>
+                    <div class="social-media-container">
+                        <h4>Social Media</h4>
+                        <img class="social-icons" id="contact-facebook-icon" src ="images/facebook.svg" alt="Image of Facebook Logo"/>
+                        <img class="social-icons" id="contact-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "map-section">
+            <h4>Visit Us</h4>
+            <p id="current-location">Your current location is Latitude:......, Longitude:......</p>
+            <p class="visit"> You can visit us below at: </p>
+            <p class="visit"> (Click the red pin on the map, then "directions" to see how you can find us) </p>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.404319177614!2d-0.14620634166734772!3d51.51672666401125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMxJzAwLjIiTiAwwrAwOCc0Mi40Ilc!5e0!3m2!1sen!2suk!4v1615323542965!5m2!1sen!2suk" 
+                 style="border-radius: 10px; border: 1px solid #E7E6E6 " allowfullscreen=""></iframe>
+            </div>
+
+
+        </section>
+
+        <!-- PRIVACY POP-UP-->
+        <div class="privacy-notice-pop-up pop-up">
+            <div class="privacy-close-button-container">
+                <a href="#"><img id="privacy-close-button" src="images/close_black.svg" alt="Close Button"/></a>
+            </div>
+
+            <div class="privacy-notice-pop-up-header-container">
+                <h4 class="privacy-notice-pop-up-header" >Advanced Cookie Settings</h4>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Essential cookies</h4>
+                    <p class="cookie-description">These cookies enable core functionality such as security, 
+                        verification of identity and network management. These cookies can’t be disabled.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Marketing Cookies</h4>
+                    <p class="cookie-description">These cookies are used to track advertising effectiveness to provide a 
+                        more relevant service and deliver better ads to suit your interests.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="save-button-container">
+                <button class="save-button button" >Save</button>
+            </div>
+        </div>
+
+        <!--Privacy Notice - COOKIE BANNER-->
+        <section class="privacy-notice">
+            <div class="privacy-notice-container"> 
+                <p>We use cookies on our website to see how you interact with it. By accepting, you agree to our use of such cookies.</p>
+                <div>
+                    <button class="privacy-notice-button advanced-button"> Advanced</button>
+                    <button class="privacy-notice-button accept-button"> Accept</button>
+                    <a href="#"><img id="close-button" src="images/close.svg" alt="Close Button"/></a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--Footer of the website-->
+        <footer class="footer">
+            <div class="footer-row">
+                <img class="social-icons footer-facebook-icon" src ="images/facebook.svg" alt="Image of Facebook Logo"/>
+                <img class="social-icons footer-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo"/>
+            </div>
+            <div class="footer-row">
+                <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
+            </div>
+            
+        </footer>
+    </body>
+</html>

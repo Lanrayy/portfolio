@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>COMP1021 Coursework 2</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="./prints.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <style>
+            header, section, footer, aside, nav, main, article, figure {
+                display: block; 
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="privacy-notice-pop-up-overlay" ></div>
+         <!--Header of the website-->
+         <header class="header">
+            <div class="header-column header-column-1">
+                <!--Logo-->
+                <a href="index.html">
+                <img class="header-item" id="site-logo" src="images/site-logo.png" alt="Website Logo"/>
+                </a>
+            </div>
+
+            <div class="header-column header-column-2">
+                <div class="social-icons-container">
+                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Facebook Logo" />
+                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Twitter Logo" />
+                </div>
+                
+                <!--Navigation bar-->
+                <nav class="header-item" id ="nav-bar">
+                    <a href= "index.html" class="nav-item">Home</a> 
+                    <a href= "about.html" class="nav-item">About</a>
+                    <a href= "portfolio.html" class="nav-item active">Portfolio</a> 
+                    <a href= "services.html" class="nav-item">Services</a> 
+                    <a href= "contact.html" class="nav-item">Contact</a> 
+                </nav>
+
+            </div>
+
+        </header>
+
+        <!--Webpage Content-->
+        <section class="page-title">
+            <h3>Portfolio</h3>
+        </section>
+
+        <section class="project">
+            <div class="project-container" id="1">
+                <div class="project-column">
+                    <img class="project-image" id="project-image-1" src="images/financial-services-website-image.jpg" alt="Image for Broker Ltd."/>
+                    <div class="overlay" id="overlay1"></div>
+                </div>
+                <div class="project-column project-description-group">
+                    <h4 class="project-title" id="project-title-1">Broker Ltd.</h4>
+                    <p class="project-description" id="project-description-1">Broker Limited is an insurance firm specialising in all cases from accidental damage to
+                        bereavement, so a website that communicates with their clients is of utmost importance. 
+                        Out work with Medilab led to 40% increase in webt traffic to their website.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-container" id="2">
+                <div class="project-column">
+                    <img class="project-image" id="project-image-2" src="images/medilab-website-image.jpg" alt="Image for Medilab"/>
+                    <div class="overlay" id="overlay2"></div>
+                </div>
+                <div class="project-column project-description-group">
+                    <h4 class="project-title" id="project-title-2">Medilab</h4>
+                    <p class="project-description" id="project-description-2">Medilab approached us for a revamp of their website. We were able to tailor the final product to their exact needs and I guess the proofs in the pudding.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-container" id="3">
+                <div class="project-column">
+                    <img class="project-image" id="project-image-3" src="images/relief-website-image.jpg" alt="Image for relief.org"/>
+                    <div class="overlay" id="overlay3"></div>
+                </div>
+                <div class="project-column project-description-group">
+                    <h4 class="project-title" id="project-title-3">Relief.org</h4>
+                    <p class="project-description" id="project-description-3">Relief is an international organisation that prides themselves with looking after the less fortunate in the world. So take priide in working with them to make their dream a reality.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- PRIVACY POP-UP-->
+        <div class="privacy-notice-pop-up pop-up">
+            <div class="privacy-close-button-container">
+                <a href="#"><img id="privacy-close-button" src="images/close_black.svg" alt="Close Button"/></a>
+            </div>
+
+            <div class="privacy-notice-pop-up-header-container">
+                <h4 class="privacy-notice-pop-up-header" >Advanced Cookie Settings</h4>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Essential cookies</h4>
+                    <p class="cookie-description">These cookies enable core functionality such as security, verification of identity and network management. These cookies can’t be disabled.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Marketing Cookies</h4>
+                    <p class="cookie-description">These cookies are used to track advertising effectiveness to provide a 
+                        more relevant service and deliver better ads to suit your interests.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="save-button-container">
+                <button class="save-button button" >Save</button>
+            </div>
+        </div>
+
+        <!--Privacy Notice - COOKIE BANNER-->
+        <section class="privacy-notice">
+            <div class="privacy-notice-container"> 
+                <p>We use cookies on our website to see how you interact with it. By accepting, you agree to our use of such cookies.</p>
+                <div>
+                    <button class="privacy-notice-button advanced-button"> Advanced</button>
+                    <button class="privacy-notice-button accept-button"> Accept</button>
+                    <a href="#"><img id="close-button" src="images/close.svg" alt="Close Button"/></a>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!--Footer of the website-->
+        <footer class="footer">
+            <div class="footer-row">
+                <img class="social-icons footer-facebook-icon" src ="images/facebook.svg" alt="Image of Facebook Logo"/>
+                <img class="social-icons footer-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo"/>
+            </div>
+            <div class="footer-row">
+                <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
+            </div>
+            
+        </footer>
+    </body>
+</html>
