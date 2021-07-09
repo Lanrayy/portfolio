@@ -211,16 +211,22 @@ p {
 /* Styles for Homepage Section 2*/
 .home-section-2 {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
+  align-items: center;
 
   background-color: #e7e6e6;
   padding: 30px;
-  height: 180px;
+  height: 200px;
 }
+
 
 .icon {
   width: 70px;
   margin: 0px 120px;
+}
+
+.home-section-2-icon{
+  height: 90px;
 }
 
 /* Styles for Section 3 */
