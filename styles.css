@@ -138,7 +138,6 @@ p {
 
 .home-section-1-column-1 {
   display: flex;
-
   text-align: left;
   justify-content: center;
   align-items: center;
@@ -155,7 +154,7 @@ p {
 }
 
 .section-1-content h1 {
-  font-size: 80px;
+  font-size: 70px;
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   margin-left: -10px;
